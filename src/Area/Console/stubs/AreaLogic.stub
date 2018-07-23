@@ -1,0 +1,12 @@
+<?php
+namespace App\Logic;
+
+use Zhi20\Laravel\Area\AreaLogic as TraitAreaLogic;
+
+class AreaLogic
+{
+    use TraitAreaLogic;
+
+
+
+}
