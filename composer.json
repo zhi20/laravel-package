@@ -1,0 +1,12 @@
+{
+    "name": "zhi20/laravel-package",
+    "description": "Laravel-Package.",
+    "keywords": ["package", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "abraa",
+            "email": "276957690@qq.cn"
+        }
+    ]
+}
