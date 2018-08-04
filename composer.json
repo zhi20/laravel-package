@@ -34,8 +34,8 @@
                 "Zhi20\\Laravel\\Sms\\SmsProvider",
                 "Zhi20\\Laravel\\Wechat\\WechatProvider",
                 "Zhi20\\Laravel\\Captcha\\CaptchaProvider",
-                "Zhi20\\Laravel\\Swoole\\SwooleProvider",
-                "Zhi20\\Laravel\\Signature\\SignatureProvider",
+                "Zhi20\\Laravel\\Swoole\\SwooleProviSignatureProviderder",
+                "Zhi20\\Laravel\\Signature\\",
                 "Zhi20\\Laravel\\Sentry\\SentryProvider"
             ],
             "aliases": {
