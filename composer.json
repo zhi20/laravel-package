@@ -32,7 +32,6 @@
             "providers": [
                 "Zhi20\\Laravel\\Core\\CoreProvider",
                 "Zhi20\\Laravel\\Sms\\SmsProvider",
-                "Zhi20\\Laravel\\Excel\\ExcelProvider",
                 "Zhi20\\Laravel\\Wechat\\WechatProvider",
                 "Zhi20\\Laravel\\Captcha\\CaptchaProvider",
                 "Zhi20\\Laravel\\Swoole\\SwooleProvider",
@@ -42,7 +41,6 @@
             "aliases": {
                 "Horizon": "Laravel\\Horizon\\Horizon",
                 "Sms": "Zhi20\\Laravel\\Sms\\SmsFacade",
-                "Excel": "Zhi20\\Laravel\\Excel\\ExcelFacade",
                 "Wechat": "Zhi20\\Laravel\\Wechat\\WechatFacade",
                 "Captcha": "Zhi20\\Laravel\\Captcha\\CaptchaFacade",
                 "Signature": "Zhi20\\Laravel\\Signature\\SignatureFacade"
