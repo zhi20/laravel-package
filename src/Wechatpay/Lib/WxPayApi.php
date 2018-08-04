@@ -1,8 +1,8 @@
 <?php
-namespace JiaLeo\Laravel\WechatPay\Lib;
+namespace Zhi20\Laravel\WechatPay\Lib;
 
-use JiaLeo\Laravel\WechatPay\Lib\WxPayException;
-use JiaLeo\Laravel\WechatPay\Lib\WxPayConfig;
+use Zhi20\Laravel\WechatPay\Lib\WxPayException;
+use Zhi20\Laravel\WechatPay\Lib\WxPayConfig;
 
 
 /**
@@ -248,7 +248,7 @@ class WxPayApi
 	 * 由商户收银台或者商户后台调用该接口发起支付。
 	 * WxPayWxPayMicroPay中body、out_trade_no、total_fee、auth_code参数必填
 	 * appid、mchid、spbill_create_ip、nonce_str不需要填入
-	 * @param \JiaLeo\WechatPay\Lib\WxPayWxPayMicroPay $inputObj
+	 * @param \Zhi20\WechatPay\Lib\WxPayWxPayMicroPay $inputObj
 	 * @param int $timeOut
 	 */
 	public static function micropay($inputObj, $timeOut = 10)

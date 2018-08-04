@@ -56,16 +56,16 @@ class PayLogic
 
         if ($data['device'] == 'mp') {
             $config = config('payment.wechatpay.all');
-            $wechatpay = new \JiaLeo\Payment\Wechatpay\MpPay($config);
+            $wechatpay = new \Zhi20\Payment\Wechatpay\MpPay($config);
         } elseif ($data['device'] == 'h5') {
             $config = config('payment.wechatpay.all');
-            $wechatpay = new \JiaLeo\Payment\Wechatpay\H5Pay($config);
+            $wechatpay = new \Zhi20\Payment\Wechatpay\H5Pay($config);
         } elseif ($data['device'] == 'native') {
             $config = config('payment.wechatpay.all');
-            $wechatpay = new \JiaLeo\Payment\Wechatpay\NativePay($config);
+            $wechatpay = new \Zhi20\Payment\Wechatpay\NativePay($config);
         } elseif ($data['device'] == 'app') {
             $config = config('payment.wechatpay.app');
-            $wechatpay = new \JiaLeo\Payment\Wechatpay\AppPay($config);
+            $wechatpay = new \Zhi20\Payment\Wechatpay\AppPay($config);
         } else {
             throw new ApiException('支付类型有误');
         }
@@ -147,13 +147,13 @@ class PayLogic
         $config = config('payment.alipay.all');
 
         if ($data['device'] == 'web') {
-            $alipay = new \JiaLeo\Payment\Alipay\WebPay($config);
+            $alipay = new \Zhi20\Payment\Alipay\WebPay($config);
         } elseif ($data['device'] == 'h5') {
-            $alipay = new \JiaLeo\Payment\Alipay\WapPay($config);
+            $alipay = new \Zhi20\Payment\Alipay\WapPay($config);
         } elseif ($data['device'] == 'app') {
-            $alipay = new \JiaLeo\Payment\Alipay\AppPay($config);
+            $alipay = new \Zhi20\Payment\Alipay\AppPay($config);
         } else {
-            $alipay = new \JiaLeo\Payment\Alipay\WebPay($config);
+            $alipay = new \Zhi20\Payment\Alipay\WebPay($config);
         }
 
         $out_trade_no = date('YmdHis') . \Jwt::get('user_info.user_id') . rand(10000, 99999);

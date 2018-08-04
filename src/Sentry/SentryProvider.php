@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Sentry;
+namespace Zhi20\Laravel\Sentry;
 
 use Illuminate\Support\ServiceProvider;
 

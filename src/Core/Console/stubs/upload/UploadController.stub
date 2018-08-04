@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 use App\Exceptions\ApiException;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use JiaLeo\Laravel\Upload\UploadClient;
+use Zhi20\Laravel\Upload\UploadClient;
 
 class UploadController extends Controller
 {
@@ -34,7 +34,7 @@ class UploadController extends Controller
                 $dir = 'user/headimg/';
                 $is_multi = true;   //是否分块
                 $part_size = 204800;   //局部设置,单位B
-                \JiaLeo\Laravel\Upload\ExtCheck::checkFileTypeOfGroup($data['file_type']);
+                \Zhi20\Laravel\Upload\ExtCheck::checkFileTypeOfGroup($data['file_type']);
                 break;
             default :
                 throw new ApiException('错误的上传类型!', 'UPLOAD_ERROR');
@@ -70,7 +70,7 @@ class UploadController extends Controller
 
         } else {        //上传到本地
 
-            $local_obj = new \JiaLeo\Laravel\Upload\LocalOss();
+            $local_obj = new \Zhi20\Laravel\Upload\LocalOss();
 
             $local_obj->getUploadId(\App\Model\UploadModel::class, $data['total_size'], $part_size, $data['file_type'], $dir, $data['filename'], $local_upload_host, $is_multi, '', $extra_data);
             $upload_sign = $local_obj->uploadSign;
@@ -118,7 +118,7 @@ class UploadController extends Controller
     {
         $this->verifyId($id);
 
-        $obj = new \JiaLeo\Laravel\Upload\LocalOss();
+        $obj = new \Zhi20\Laravel\Upload\LocalOss();
         $data = $obj->multiUploadComplete(\App\Model\UploadModel::class, $id);
 
         return $this->response(['path' => $data['path'], 'url' => $data['url'], 'upload_id' => $id, 'origin_filename' => $data['origin_filename']]);
@@ -152,7 +152,7 @@ class UploadController extends Controller
         //完成后是否上传到阿里云
         $is_upload = true;
 
-        $local_obj = new \JiaLeo\Laravel\Upload\LocalOss();
+        $local_obj = new \Zhi20\Laravel\Upload\LocalOss();
         $result = $local_obj->updatePart(\App\Model\UploadModel::class, $data['upload_id'], $data['part_now'], $is_upload);
 
         return $this->response($result);

@@ -1,8 +1,8 @@
 <?php
 
-namespace JiaLeo\Laravel\Swoole\Http\Controllers;
+namespace Zhi20\Laravel\Swoole\Http\Controllers;
 
-use JiaLeo\Swoole\Lib\Context;
+use Zhi20\Swoole\Lib\Context;
 
 class HomeController extends Controller
 {
@@ -32,6 +32,6 @@ class HomeController extends Controller
 
         dump($data);
 
-        return view('jialeo-swoole::dashboard', array('data' => $data));
+        return view('Zhi20-swoole::dashboard', array('data' => $data));
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\Wechat;
+namespace Zhi20\Laravel\Wechat;
 
 /**
  *    微信公众平台PHP-SDK, 官方API部分

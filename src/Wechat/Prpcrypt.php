@@ -6,7 +6,7 @@
  * Time: 下午3:29
  */
 
-namespace JiaLeo\Laravel\Wechat;
+namespace Zhi20\Laravel\Wechat;
 
 
 /**

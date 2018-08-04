@@ -2,8 +2,8 @@
 
 namespace App\Socket;
 
-use JiaLeo\Swoole\Lib\Message;
-use JiaLeo\Swoole\Lib\Worker;
+use Zhi20\Swoole\Lib\Message;
+use Zhi20\Swoole\Lib\Worker;
 
 class Events
 {

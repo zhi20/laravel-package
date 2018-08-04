@@ -144,7 +144,6 @@ class CoreProvider extends ServiceProvider
                 \Zhi20\Laravel\Core\Console\CreateTest::class,
                 \Zhi20\Laravel\Core\Console\CreateSeeder::class,
                 \Zhi20\Laravel\Core\Console\CreateMigration::class,
-                \Zhi20\Laravel\Core\Console\CreateInit::class,
                 \Zhi20\Laravel\Core\Console\CreatePermission::class,
 
                 \Zhi20\Laravel\Core\Console\Config::class,

@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Modules\Advertising;
+namespace Zhi20\Laravel\Modules\Advertising;
 
 use App\Exceptions\ApiException;
 use Illuminate\Console\Command;

@@ -51,7 +51,7 @@ class ApiException extends \Exception
             return response()->json($data, $http_code);
         } else {
 
-            return response()->view('jialeo-package::exception', [
+            return response()->view('Zhi20-package::exception', [
                 'error_msg' => $this->getMessage(),
                 'debug' => config('app.debug') == 'true' ? [
                     'type' => get_class($this),

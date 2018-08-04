@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Upload;
+namespace Zhi20\Laravel\Upload;
 
 use App\Exceptions\ApiException;
 use App\Model\UploadModel;

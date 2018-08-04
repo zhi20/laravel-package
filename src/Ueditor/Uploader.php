@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\Ueditor;
+namespace Zhi20\Laravel\Ueditor;
 
 /**
  * Created by JetBrains PhpStorm.

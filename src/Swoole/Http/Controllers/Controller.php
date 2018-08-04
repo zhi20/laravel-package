@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Swoole\Http\Controllers;
+namespace Zhi20\Laravel\Swoole\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Routing\Controller as BaseController;
 

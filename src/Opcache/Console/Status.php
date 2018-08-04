@@ -1,9 +1,9 @@
 <?php
 
-namespace JiaLeo\Laravel\Opcache\Console;
+namespace Zhi20\Laravel\Opcache\Console;
 
 use Illuminate\Console\Command;
-use JiaLeo\Laravel\Opcache\OpcacheClass;
+use Zhi20\Laravel\Opcache\OpcacheClass;
 use Illuminate\Support\Facades\Crypt as Crypt;
 
 class Status extends Command

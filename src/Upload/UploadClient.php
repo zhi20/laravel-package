@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\Upload;
+namespace Zhi20\Laravel\Upload;
 
 use App\Exceptions\ApiException;
 
@@ -17,7 +17,7 @@ class UploadClient
     {
         //加载配置,默认阿里云
         $driver = config('upload.driver', 'aliyun');
-        $class = 'JiaLeo\Laravel\Upload\\' . ucfirst($driver) . 'UploadDriver';
+        $class = 'Zhi20\Laravel\Upload\\' . ucfirst($driver) . 'UploadDriver';
         //实例化驱动
         $this->driver = new $class();
         $this->config = $this->driver->config;

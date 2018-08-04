@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\ShortUrl;
+namespace Zhi20\Laravel\ShortUrl;
 
 
 class ShortUrl

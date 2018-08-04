@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\Swoole;
+namespace Zhi20\Laravel\Swoole;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -15,11 +15,11 @@ class SwooleProvider extends ServiceProvider
         //注册自动生成命令
         if ($this->app->runningInConsole()) {
             $this->commands([
-                'JiaLeo\Laravel\Swoole\Console\CreateSwoole',
-                'JiaLeo\Laravel\Swoole\Console\Register',
-                'JiaLeo\Laravel\Swoole\Console\Gateway',
-                'JiaLeo\Laravel\Swoole\Console\Worker',
-                'JiaLeo\Laravel\Swoole\Console\Swoole',
+                'Zhi20\Laravel\Swoole\Console\CreateSwoole',
+                'Zhi20\Laravel\Swoole\Console\Register',
+                'Zhi20\Laravel\Swoole\Console\Gateway',
+                'Zhi20\Laravel\Swoole\Console\Worker',
+                'Zhi20\Laravel\Swoole\Console\Swoole',
             ]);
         }
 
@@ -35,7 +35,7 @@ class SwooleProvider extends ServiceProvider
      */
     protected function registerResources()
     {
-        $this->loadViewsFrom(__DIR__ . '/resources/views', 'jialeo-swoole');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'Zhi20-swoole');
     }
 
     /**
@@ -47,7 +47,7 @@ class SwooleProvider extends ServiceProvider
     {
         \Route::group([
             'prefix' => config('swoole.laravel.uri', 'swoole'),
-            'namespace' => 'JiaLeo\Laravel\Swoole\Http\Controllers',
+            'namespace' => 'Zhi20\Laravel\Swoole\Http\Controllers',
             'middleware' => config('swoole.laravel.middleware', 'web'),
         ], function () {
             $this->loadRoutesFrom(__DIR__ . '/routes/web.php');

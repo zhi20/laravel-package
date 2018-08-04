@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Swoole\Console;
+namespace Zhi20\Laravel\Swoole\Console;
 
 use Illuminate\Console\Command;
 

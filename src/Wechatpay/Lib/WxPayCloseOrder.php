@@ -6,7 +6,7 @@
  * Time: 上午10:43
  */
 
-namespace JiaLeo\Laravel\WechatPay\Lib;
+namespace Zhi20\Laravel\WechatPay\Lib;
 
 
 /**

@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\Jpush;
+namespace Zhi20\Laravel\Jpush;
 
 use JPush\Client;
 

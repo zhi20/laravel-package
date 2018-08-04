@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Wechat;
+namespace Zhi20\Laravel\Wechat;
 
 use App\Exceptions\ApiException;
 use Psy\Command\DumpCommand;

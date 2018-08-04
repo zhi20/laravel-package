@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\SegmentWord;
+namespace Zhi20\Laravel\SegmentWord;
 
 class Scws
 {

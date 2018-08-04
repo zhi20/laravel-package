@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Modules\Version;
+namespace Zhi20\Laravel\Modules\Version;
 
 use App\Exceptions\ApiException;
 use App\Model\AdminMenuModel;

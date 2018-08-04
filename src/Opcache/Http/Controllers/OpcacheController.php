@@ -1,9 +1,9 @@
 <?php
 
-namespace JiaLeo\Laravel\Opcache\Http\Controllers;
+namespace Zhi20\Laravel\Opcache\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
-use JiaLeo\Laravel\Opcache\OpcacheClass;
+use Zhi20\Laravel\Opcache\OpcacheClass;
 
 use Illuminate\Support\Facades\Crypt as Crypt;
 use Illuminate\Contracts\Encryption\DecryptException;

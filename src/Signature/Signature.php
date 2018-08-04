@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Signature;
+namespace Zhi20\Laravel\Signature;
 
 use App\Exceptions\ApiException;
 

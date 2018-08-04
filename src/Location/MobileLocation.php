@@ -1,10 +1,10 @@
 <?php
-namespace JiaLeo\Laravel\Location;
+namespace Zhi20\Laravel\Location;
 
 /**
  * 手机归属地查询
  * Class MobileLocation
- * @package JiaLeo\Laravel\MobileLocation
+ * @package Zhi20\Laravel\MobileLocation
  */
 class MobileLocation
 {

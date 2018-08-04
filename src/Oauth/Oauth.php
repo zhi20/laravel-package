@@ -1,7 +1,7 @@
 <?php
 
 
-namespace JiaLeo\Laravel\Oauth;
+namespace Zhi20\Laravel\Oauth;
 
 
 use App\Exceptions\ApiException;
@@ -44,7 +44,7 @@ class Oauth
         $this->appkey = $config['appkey'];
 
         //实例化驱动
-        $store_class = 'JiaLeo\Laravel\Oauth\\' . ucfirst($this->oauth_type) . 'Driver';
+        $store_class = 'Zhi20\Laravel\Oauth\\' . ucfirst($this->oauth_type) . 'Driver';
 
         if (!class_exists($store_class)) {
             throw new ApiException('Oauth Driver [' . $this->oauth_type . '] is not supported.');

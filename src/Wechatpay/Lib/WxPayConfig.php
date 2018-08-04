@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\WechatPay\Lib;
+namespace Zhi20\Laravel\WechatPay\Lib;
 
 /**
 * 	配置账号信息

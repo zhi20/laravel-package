@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use JiaLeo\Laravel\Signature\CacheStorage;
-use JiaLeo\Laravel\Signature\Mysql;
-use JiaLeo\Laravel\Signature\MysqlStorage;
-use JiaLeo\Laravel\Signature\RedisStorage;
+use Zhi20\Laravel\Signature\CacheStorage;
+use Zhi20\Laravel\Signature\Mysql;
+use Zhi20\Laravel\Signature\MysqlStorage;
+use Zhi20\Laravel\Signature\RedisStorage;
 
 class TestController extends Controller
 {

@@ -1,14 +1,14 @@
 <?php
 
 
-namespace JiaLeo\Laravel\Oauth;
+namespace Zhi20\Laravel\Oauth;
 
 
 use App\Exceptions\ApiException;
 
 /**
  * Class QQDriver
- * @package JiaLeo\Laravel\Oauth
+ * @package Zhi20\Laravel\Oauth
  */
 class QQDriver implements OauthInterface
 {

@@ -1,10 +1,10 @@
 <?php
-namespace JiaLeo\Laravel\Wechat;
+namespace Zhi20\Laravel\Wechat;
 
 /**
  * 小程序
  * Class WechatMiniApp
- * @package JiaLeo\Laravel\Wechat
+ * @package Zhi20\Laravel\Wechat
  */
 class WechatMiniApp
 {

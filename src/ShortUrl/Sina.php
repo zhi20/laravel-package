@@ -1,11 +1,11 @@
 <?php
-namespace JiaLeo\Laravel\ShortUrl;
+namespace Zhi20\Laravel\ShortUrl;
 
 
 /**
  * 转换为新浪的短网址(t.cn)
  * Class Sina
- * @package JiaLeo\Laravel\ShortUrl
+ * @package Zhi20\Laravel\ShortUrl
  */
 class Sina
 {

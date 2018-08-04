@@ -22,7 +22,7 @@ class WechatpayNotifyController extends Controller
             exit;
         }
 
-        $wechatpay = new \JiaLeo\Payment\Wechatpay\Notify($config);
+        $wechatpay = new \Zhi20\Payment\Wechatpay\Notify($config);
 
         $result = false;
         $log_error_msg = '';
@@ -93,7 +93,7 @@ class WechatpayNotifyController extends Controller
             exit;
         }
 
-        $wechatpay = new \JiaLeo\Payment\Wechatpay\RefundNotify($config);
+        $wechatpay = new \Zhi20\Payment\Wechatpay\RefundNotify($config);
 
         $result = false;
         $log_error_msg = '';

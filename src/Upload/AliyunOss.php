@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\Upload;
+namespace Zhi20\Laravel\Upload;
 
 use App\Exceptions\ApiException;
 use OSS\OssClient;
@@ -8,7 +8,7 @@ use OSS\Core\OssException;
 /**
  * 保留,用于兼容旧版本上传
  * Class AliyunOss
- * @package JiaLeo\Laravel\Upload
+ * @package Zhi20\Laravel\Upload
  */
 class AliyunOss
 {

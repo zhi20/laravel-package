@@ -15,7 +15,7 @@ class AlipayNotifyController extends Controller
     public function payNotify()
     {
         $config = config('payment.alipay.all');
-        $alipay = new \JiaLeo\Payment\Alipay\Notify($config);
+        $alipay = new \Zhi20\Payment\Alipay\Notify($config);
 
         $result = false;
         $error_msg = '';

@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Signature;
+namespace Zhi20\Laravel\Signature;
 
 use App\Exceptions\ApiException;
 use Illuminate\Support\ServiceProvider;
@@ -25,7 +25,7 @@ class SignatureProvider extends ServiceProvider
             }
 
             $store = $config['store_drive'];
-            $store_class = 'JiaLeo\Laravel\Signature\\' . ucfirst($store) . 'Storage';
+            $store_class = 'Zhi20\Laravel\Signature\\' . ucfirst($store) . 'Storage';
             if (!class_exists($store_class)) {
                 throw new ApiException("Signature Store [$store] is not supported.");
             }

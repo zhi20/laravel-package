@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Signature\Console;
+namespace Zhi20\Laravel\Signature\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Schema\Blueprint;

@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Swoole\Console;
+namespace Zhi20\Laravel\Swoole\Console;
 
 use Illuminate\Console\Command;
 
@@ -100,7 +100,7 @@ class Worker extends Command
         $register_config = config('swoole.register');
         $worker_event = config('swoole.worker.events');
 
-        $server = new \JiaLeo\Swoole\Lib\Worker($worker_config, $register_config, $worker_event);
+        $server = new \Zhi20\Swoole\Lib\Worker($worker_config, $register_config, $worker_event);
 
         $server->daemonize = boolval($options['d']);             //是否以守护进程启动
         $server->log_path = $this->logPath;

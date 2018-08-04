@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Wechat\Console;
+namespace Zhi20\Laravel\Wechat\Console;
 
 use Illuminate\Console\Command;
 

@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\Wechatpay;
+namespace Zhi20\Laravel\Wechatpay;
 
 use App\Exceptions\ApiException;
 

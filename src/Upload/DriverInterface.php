@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\Upload;
+namespace Zhi20\Laravel\Upload;
 
 interface DriverInterface
 {

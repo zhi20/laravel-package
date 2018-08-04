@@ -116,7 +116,7 @@ class WechatController extends Controller
         //默认是公众号类型
         $params['type'] = empty($data['type']) ? 'mp' : $data['type'];
 
-        $weObj = new \JiaLeo\Wechat\WechatOauth($params);
+        $weObj = new \Zhi20\Wechat\WechatOauth($params);
         return $weObj->run();
     }
 

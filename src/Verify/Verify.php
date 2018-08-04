@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\Verify;
+namespace Zhi20\Laravel\Verify;
 
 use App\Exceptions\ApiException;
 use Illuminate\Support\Arr;
@@ -7,7 +7,7 @@ use Illuminate\Support\Arr;
 /**
  * 验证类- for laravel
  * Class Verify
- * @package JiaLeo\Verify
+ * @package Zhi20\Verify
  */
 class Verify
 {

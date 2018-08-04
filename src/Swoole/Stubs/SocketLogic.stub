@@ -1,10 +1,10 @@
 <?php
 namespace App\Logic;
 
-use JiaLeo\Swoole\Lib\GatewayClient;
-use JiaLeo\Swoole\Lib\Message;
-use JiaLeo\Swoole\Lib\Worker;
-use JiaLeo\Swoole\Lib\Context;
+use Zhi20\Swoole\Lib\GatewayClient;
+use Zhi20\Swoole\Lib\Message;
+use Zhi20\Swoole\Lib\Worker;
+use Zhi20\Swoole\Lib\Context;
 
 class SocketLogic
 {

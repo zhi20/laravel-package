@@ -1,12 +1,12 @@
 <?php
 
-namespace JiaLeo\Laravel\Wechat;
+namespace Zhi20\Laravel\Wechat;
 
 
 /**
  * 第三方平台类
  * Class Component
- * @package JiaLeo\Laravel\Wechat
+ * @package Zhi20\Laravel\Wechat
  */
 class Component
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Swoole\Console;
+namespace Zhi20\Laravel\Swoole\Console;
 
 use Illuminate\Console\Command;
 
@@ -94,7 +94,7 @@ class Gateway extends Command
         $gateway_config['verify_websocket_class'] = config('swoole.gateway.verify_websocket_class');
         $gateway_config['packet_setting_class'] = config('swoole.gateway.packet_setting_class');
 
-        $server = new \JiaLeo\Swoole\Lib\Gateway($gateway_config, $register_config);
+        $server = new \Zhi20\Swoole\Lib\Gateway($gateway_config, $register_config);
         $server->daemonize = boolval($options['d']);             //是否以守护进程启动
         $server->log_path = $this->logPath;
         $server->log_filename = $this->logFilename;

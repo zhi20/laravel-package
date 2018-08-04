@@ -6,7 +6,7 @@
  * Time: 下午3:24
  */
 
-namespace JiaLeo\Laravel\Oauth;
+namespace Zhi20\Laravel\Oauth;
 
 
 interface OauthInterface

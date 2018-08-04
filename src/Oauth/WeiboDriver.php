@@ -1,7 +1,7 @@
 <?php
 
 
-namespace JiaLeo\Laravel\Oauth;
+namespace Zhi20\Laravel\Oauth;
 
 
 use App\Exceptions\ApiException;

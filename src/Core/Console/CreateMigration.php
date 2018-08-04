@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Core\Console;
+namespace Zhi20\Laravel\Core\Console;
 
 use App\Exceptions\ApiException;
 use Illuminate\Console\Command;

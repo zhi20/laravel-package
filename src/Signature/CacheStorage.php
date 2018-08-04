@@ -1,5 +1,5 @@
 <?php
-namespace JiaLeo\Laravel\Signature;
+namespace Zhi20\Laravel\Signature;
 
 class CacheStorage implements Storage
 {

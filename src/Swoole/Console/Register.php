@@ -1,6 +1,6 @@
 <?php
 
-namespace JiaLeo\Laravel\Swoole\Console;
+namespace Zhi20\Laravel\Swoole\Console;
 
 use Illuminate\Console\Command;
 
@@ -89,7 +89,7 @@ class Register extends Command
         }
 
         $config = config('swoole.register');
-        $server = new \JiaLeo\Swoole\Lib\Register($config['host'], $config['port']);
+        $server = new \Zhi20\Swoole\Lib\Register($config['host'], $config['port']);
         $server->daemonize = $daemonize;
         $server->project_name = config('app.name');
 
