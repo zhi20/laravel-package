@@ -1,12 +1,53 @@
 {
     "name": "zhi20/laravel-package",
-    "description": "Laravel-Package.",
+    "description": "The Laravel-Package.",
     "keywords": ["package", "laravel"],
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "abraa",
-            "email": "276957690@qq.cn"
+            "email": "276957690@qq.com"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "firebase/php-jwt": "^4.0",
+        "aliyuncs/oss-sdk-php": "^2.2",
+        "qcloud/cos-sdk-v5": ">=1.0",
+        "gregwar/captcha": "1.*",
+        "laravel/framework": "~5.4",
+        "jpush/jpush": "v3.5.*",
+        "hashids/hashids": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zhi20\\Laravel\\": "src/",
+            "App\\Exceptions\\": "src/Core/Exception"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zhi20\\Laravel\\Core\\CoreProvider",
+                "Zhi20\\Laravel\\Sms\\SmsProvider",
+                "Zhi20\\Laravel\\Excel\\ExcelProvider",
+                "Zhi20\\Laravel\\Wechat\\WechatProvider",
+                "Zhi20\\Laravel\\Captcha\\CaptchaProvider",
+                "Zhi20\\Laravel\\Swoole\\SwooleProvider",
+                "Zhi20\\Laravel\\Signature\\SignatureProvider",
+                "Zhi20\\Laravel\\Sentry\\SentryProvider"
+            ],
+            "aliases": {
+                "Horizon": "Laravel\\Horizon\\Horizon",
+                "Sms": "Zhi20\\Laravel\\Sms\\SmsFacade",
+                "Excel": "Zhi20\\Laravel\\Excel\\ExcelFacade",
+                "Wechat": "Zhi20\\Laravel\\Wechat\\WechatFacade",
+                "Captcha": "Zhi20\\Laravel\\Captcha\\CaptchaFacade",
+                "Signature": "Zhi20\\Laravel\\Signature\\SignatureFacade"
+            }
+        }
+    }
+
 }
