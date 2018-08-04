@@ -2,6 +2,7 @@
     "name": "zhi20/laravel-package",
     "description": "The Hanzi-Laravel-Package.",
     "keywords": ["package", "laravel"],
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
