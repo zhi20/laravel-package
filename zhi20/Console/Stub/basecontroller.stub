@@ -1,0 +1,25 @@
+<?php
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class BaseController extends Controller
+{
+    //
+    protected $isTree = false;
+
+    protected $logicName = '';
+
+    protected $isJson = false;
+
+    //
+    public function  __construct()
+    {
+        if(empty($this->logicName)){
+            $class = str_replace("App\\Http\\Controllers\\", "", get_class($this) );
+
+            $this->logicName = str_replace_last('Controller', '', $class);
+        }
+        load_helper('Common');
+    }
+}

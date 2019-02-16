@@ -1,0 +1,39 @@
+@extends('Admin.public.layout')
+@section('content')
+    <form data-url="{{ module_url('save') }}" method="post" class="form">
+        <fieldset class="fixed">
+            <table>
+                <tr>
+                    <th>{{ trans('标题') }}：</th>
+
+                    <td><input name="text" class="easyui-textbox"  data-options="required:true"></td>
+
+                </tr>
+                <tr>
+                    <th>{{ trans('名称') }}：</th>
+                    <td><input name="field" class="easyui-textbox"  data-options="required:true"></td>
+                </tr>
+                <tr>
+                    <th>{{ trans('值') }}：</th>
+                    <td>
+                        <input name="value" class="easyui-textbox"  data-options="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>{{ trans('base.locked') }}：</th>
+                    <td>
+                        <input type="radio" name="locked" checked value="0">{{ trans('base.no') }}
+                        <input type="radio" name="locked" value="1">{{ trans('base.yes') }}
+                    </td>
+                </tr>
+            </table>
+            <input type="hidden" name="id" value="0">
+        </fieldset>
+    </form>
+    <script type="text/javascript">
+        function setData(data) {
+
+        }
+    </script>
+@endsection

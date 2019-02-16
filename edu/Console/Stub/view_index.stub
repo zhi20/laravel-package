@@ -1,0 +1,98 @@
+@extends('Admin.public.layout')
+@section('content')
+    <div id="toolbar">
+        <table class="form">
+            <tr>
+                 <td width="100%">
+                    <a class="easyui-linkbutton" plain="true" onclick="onOpen({})"><i class="fa fa-plus"></i> {{ trans('base.add') }}</a>
+                </td>
+                <td>
+                    <input name="keyword" class="easyui-textbox" data-options="buttonText:' {{ trans('base.search') }} ',prompt:'{{ trans('base.keyword') }}',buttonIcon:'icon-search',onClickButton: onSearch" style="width:250px;">
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table id="grid">
+        <thead>
+        <tr>
+            <th data-options="field:'id'"></th>
+            <th data-options="field:'text',width:50">名称</th>
+            <th data-options="field:'code',width:120">简码</th>
+            <th data-options="field:'locked',width:60, align:'center',formatter:function(value){
+    return value==1?'<font color=red>{{ trans('base.yes') }}</font>':'{{ trans('base.no') }}';}">{{ trans('base.locked') }}
+            </th>
+        </tr>
+        </thead>
+    </table>
+    <div id="leftMenu" class="easyui-menu" data-options="onClick:onMenu">
+        <div data-options="name:'reload',iconCls:'icon-save'">{{ trans('base.reload') }}{{ trans('base.list') }}</div>
+        <div data-options="name:'add',iconCls:'fa fa-plus'">{{ trans('base.add') }}</div>
+        <!-- <div data-options="name:'delete', iconCls:'icon-no'">{{ trans('base.delete') }}</div> -->
+    </div>
+    <script type="text/javascript">
+        var grid = $('#grid');
+        var path = null;
+        var rowId = 0;
+        $(function(){
+            easyui.datagrid({
+                element:grid,
+                onContextMenu: function(e, row){
+                    e.preventDefault();
+                    try {
+                        rowId = row.id;
+                        $('#leftMenu').menu('show', {
+                            left:e.pageX,
+                            top:e.pageY
+                        });
+                    }catch(e){}
+
+                },
+                 onDblClickRow: function (index, node) {
+                    onOpen(node);
+                },
+
+            });
+        });
+
+        function onOpen(node) {
+            var opts = {
+                href: '{{ module_url('form') }}',
+                width: 600,
+                data: node,
+                modal: false,
+                handler: function (result) {
+                    grid.datagrid('reload');
+                },
+            };
+            shadow.open(opts);
+
+        }
+
+        function onMenu(item) {
+            switch (item.name) {
+                case 'reload':
+                    grid.datagrid('reload');
+                    break;
+                case 'add':
+                    onOpen({});
+                    break;
+               case 'delete':
+                   if (rowId) {
+                       easyui.doAjax('{{ module_url("delete") }}', {id: rowId}, function () {
+                           grid.datagrid('reload');
+                       });
+                   }
+                   break;
+            }
+
+        }
+        function onSearch() {
+            grid.datagrid({
+                queryParams: {
+                    keyword: $(this).val()
+                }
+            });
+        }
+    </script>
+@endsection
